@@ -1,12 +1,13 @@
 <?php
 function wpdw_register_meta_boxes() {
     add_meta_box( 
-    	'wpdw_myfirstPluginID',//id
+    	'dwwp_meta',//id
     	'Mortgage Calulation',//title
     	'wpdw_meta_callback', //callback// bayad be function toye MyFirstPlugin_render_admin.php b in esm besazim
     	//what kind of post type
     	'mortgage',//post type
     	'normal',
+    	'core'
 
      );
 }
@@ -24,18 +25,16 @@ function wpdw_meta_callback($post){
 	<div>
 		<div class="meta-row">
 			<div class="meta-th">
-				<label for="mortgageid" class="dwwp-row-title">Mortgage ID</label>
+				<label for="mortgage_id" class="dwwp-row-title">Mortgage ID</label>
 			</div>
+				
 			<div class="meta-td">
-				<input type="text" class="dwwp-row-content" name="job_id" id="mortgage_id"
-				value="<?php if ( ! empty ( $dwwp_stored_meta['mortgage_id'] ) ) 
+				<input type="text" name="mortgage_id" id="mortgage_id"
+				value="<?php if ( ! empty ( $dwwp_stored_meta['mortgage_id'] ) )
 					echo esc_attr( $dwwp_stored_meta['mortgage_id'][0] );
-				 ?>"/>
+				?>"/>
 			</div>
 		</div>
-
-
-</div>
 
 
 <div class="meta">
@@ -53,9 +52,9 @@ function wpdw_meta_callback($post){
 	$content = get_post_meta( $post->ID, 'principle_duties', true );
 		$editor = 'principle_duties';
 		$settings = array(
+			'textarea_rows' => 8,
 		);
 		wp_editor( $content, $editor, $settings); ?>
-	?>
 	
 </div>
 <?php

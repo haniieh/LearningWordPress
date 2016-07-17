@@ -95,17 +95,17 @@ $labels = array(
         'choose_from_most_used'      => 'Choose from the most used ' . $plural,
         'not_found'                  => 'No ' . $plural . ' found.',
         'menu_name'                  => $plural,
-	);
+        );
 
 	$args = array(
-		'hierarchical'          => true,
-		'labels'                => $labels,
-		'show_ui'               => true,
-		'show_admin_column'     => true,
-		'update_count_callback' => '_update_post_term_count',
-		'query_var'             => true,
-		'rewrite'               => array( 'slug' => 'location' ),
-									//same be same as taxonomy
+            'hierarchical'          => true,
+            'labels'                => $labels,
+            'show_ui'               => true,
+            'show_admin_column'     => true,
+            'update_count_callback' => '_update_post_term_count',
+            'query_var'             => true,
+            'rewrite'               => array( 'slug' => 'locarion' ),
+									//same as taxonomy
 		);
 
 
