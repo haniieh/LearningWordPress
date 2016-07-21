@@ -102,7 +102,7 @@ add_action( 'wp_ajax_save_sort', 'dwwp_save_reorder' );//esmesh bayad wp_ajax_  
 
 function dwwp_save_reorder() {
 
-	if ( ! check_ajax_referer( 'wp_mortgage_order', 'security' ) ) {
+	if ( ! check_ajax_referer( 'wp-mortgage-order', 'security' ) ) {
 		return wp_send_json_error( 'Invalid Nonce' );
 	}
 

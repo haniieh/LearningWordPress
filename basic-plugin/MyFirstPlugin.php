@@ -58,9 +58,9 @@ function wpdw_add_enqueue_script(){
 
 		wp_enqueue_script( 'reorder-js', plugins_url( 'js/reorder.js', __FILE__ ), array( 'jquery', 'jquery-ui-sortable' ), '20160720', true );
 		
-		wp_localize_script( 'reorder-js', 'WP_MORTGAGE_LISTING', array(
-			'security' => wp_create_nonce( 'wp_mortgage_order' ),
-			'success' => __( 'Mortgage sort order has been saved.' ),
+	wp_localize_script( 'reorder-js', 'WP_MORTGAGE_LISTING', array(
+			'security' => wp_create_nonce( 'wp-mortgage-order' ),
+			'success' => __( 'Jobs sort order has been saved.' ),
 			'failure' => __( 'There was an error saving the sort order, or you do not have proper permissions.' )
 		) );
 

@@ -52,6 +52,7 @@ jQuery(document).ready(function($) {
 });
 */
 
+
 update: function( event, ui ) {
 			animation.show();
 
@@ -70,7 +71,7 @@ update: function( event, ui ) {
 					if( true === response.success ) {
 						pageTitle.after( '<div id="message" class="updated"><p>' + WP_MORTGAGE_LISTING.success + '</p></div>' );
 					} else {
-						pageTitle.after( '<div id="message" class="error"><p>' + WP_MORTGAGE_LISTING.failure + '</p></div>' );
+						pageTitle.after( '<div id="message" class="error"><p>' + WP_MORTGAG_LISTING.failure + '</p></div>' );
 					}
 					
 					
@@ -78,13 +79,10 @@ update: function( event, ui ) {
 				error: function( error ) {
 					$( 'div#message' ).remove();
 					animation.hide();
-					pageTitle.after( '<div id="message" class="error"><p>' + WP_MORTGAGE_LISTING.failure + '</p></div>' );
+					pageTitle.after( '<div id="message" class="error"><p>' + WP_MORTGAG_LISTING.failure + '</p></div>' );
 				}
 			});
 		}
 	});
 
 });
-
-
-		
