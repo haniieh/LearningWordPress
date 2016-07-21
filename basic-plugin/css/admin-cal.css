@@ -1,0 +1,48 @@
+.meta-row{
+		text-align: bold;
+		padding:10px;
+		border-bottom: 1px solid #e9e9e9;
+}
+.meta-th{
+		display: inline-block;
+		float: left;
+		font-weight: bold;
+		width: 25%;
+}
+.meta-tr{
+		font-weight: bold;
+		display: inline-block;
+		width: 75%;
+}
+.dwwp-textarea{
+	margin-top: 10px;
+	padding-top: 10%;
+		width: 75%;
+		height: 100%;
+}
+/*Get the class by inspect element*/
+.quicktags-toolbar{
+	background: white !important;
+	border-bottom: none !important;
+}
+/*************************************************************************************************/
+/*Settings page styles.*/
+.custom-type-list { margin: 20px 0; }
+.custom-type-list li {
+	border: 1px solid #ddd;
+	border-radius: 5px; /*Make the box circle*/
+	background-color:#f7f7f7;
+	max-width: 200px;
+	padding: 10px;
+	cursor: move;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+/*ID*/
+#loading-animation { display: none; }
+/*************************************************************************************************/
+
+
+
+
+
